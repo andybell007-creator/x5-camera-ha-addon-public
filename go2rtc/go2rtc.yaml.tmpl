@@ -8,7 +8,7 @@ rtsp:
 webrtc:
   listen: ":8555"
   candidates:
-    - YOUR_HAOS_HOST_IP:8555
+    - __HAOS_HOST_IP__:8555
 
 log:
   level: info
@@ -18,7 +18,7 @@ ffmpeg:
   h264: "-c:v libx264 -g:v 8 -bf:v 0 -profile:v high -level:v 4.1 -preset:v superfast -tune:v zerolatency -pix_fmt:v yuv420p"
 
 streams:
-  camera_YOUR_CAMERA_UID:
-    - http://127.0.0.1:8085/cam/YOUR_CAMERA_UID
-    - ffmpeg:http://127.0.0.1:8085/audio/YOUR_CAMERA_UID#audio=aac#audio=opus#async
-    - ffmpeg:camera_YOUR_CAMERA_UID#video=h264
+  camera___CAMERA_UID__:
+    - http://127.0.0.1:8085/cam/__CAMERA_UID__
+    - ffmpeg:http://127.0.0.1:8085/audio/__CAMERA_UID__#audio=aac#audio=opus#async
+    - ffmpeg:camera___CAMERA_UID__#video=h264

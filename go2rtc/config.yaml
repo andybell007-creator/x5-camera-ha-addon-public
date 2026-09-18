@@ -11,3 +11,9 @@ init: false
 host_network: true
 webui: "http://[HOST]:[PORT:1984]/"
 map: []
+options:
+  camera_uid: ""
+  haos_host_ip: ""
+schema:
+  camera_uid: str
+  haos_host_ip: str
