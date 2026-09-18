@@ -1,0 +1,24 @@
+name: ZIOT RTP Bridge
+version: "1.0.0"
+slug: ziot_bridge
+description: Local MJPEG/audio bridge for ZIOT / gps555.net TXW817 IP cameras
+url: https://github.com/mauriciobc/ziot-rtp-bridge
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+host_network: true
+watchdog: "http://[HOST]:[PORT:8085]/health"
+webui: "http://[HOST]:[PORT:8085]/"
+map: []
+options:
+  token: ""
+  port: 8085
+  cameras: []
+schema:
+  token: password
+  port: int
+  cameras:
+    - str?

@@ -1,0 +1,13 @@
+name: go2rtc for ZIOT bridge
+version: "1.0.0"
+slug: go2rtc_ziot
+description: RTSP/WebRTC bridge in front of the ZIOT camera bridge, for Home Assistant live preview
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+host_network: true
+webui: "http://[HOST]:[PORT:1984]/"
+map: []

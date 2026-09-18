@@ -1,0 +1,3 @@
+name: Local ZIOT bridge add-ons
+url: git://YOUR_GIT_SERVER_IP/ha-ziot-addon-repo
+maintainer: local
