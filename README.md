@@ -47,3 +47,12 @@ refresh it by opening the vendor app. [`token-refresh/`](token-refresh/)
 documents an optional, unofficial way to automate that via direct API calls
 instead, reverse-engineered from the app. It comes with a clear caveat: it's
 unofficial and can break if the vendor changes their API.
+
+## Pairing a new camera without the app
+
+Adding a *brand-new* camera to your account normally still needs the vendor
+app once, for Bluetooth/WiFi provisioning. [`pairing/`](pairing/) documents
+an optional, unofficial way to do that from a computer instead — reverse
+-engineered from a live capture of the app's own Bluetooth pairing traffic,
+verified working against real hardware. Same caveat as the token refresh:
+unofficial, may break if the vendor changes anything.
